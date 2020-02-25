@@ -1,0 +1,7 @@
+{
+  "name": "postgres-typeorm-graphql",
+  "version": "1.0.0",
+  "description": "Postgres-Typeorm-Graphql Api",
+  "main": "index.js",
+  "license": "MIT"
+}
