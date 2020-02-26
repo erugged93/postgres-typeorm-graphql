@@ -1,4 +1,4 @@
-import { PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, Index } from "typeorm";
+import { PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, Index } from "@gather/typeorm";
 
 export abstract class Base {
     @PrimaryGeneratedColumn("uuid")

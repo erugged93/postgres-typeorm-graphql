@@ -1,0 +1,49 @@
+type Address {
+    id: UUID!
+    companyId: String!
+    name: String!
+    address1: String!
+    address2: String
+    city: String!
+    state: String!
+    zip: String!
+    create: DateTime
+	update: DateTime
+}
+
+input AddressInput {
+    companyId: String!
+    name: String!
+    address1: String!
+    address2: String
+    city: String!
+    state: String!
+    zip: String!
+}
+
+input AddressEdit {
+    name: String
+    address1: String
+    address2: String
+    city: String
+    state: String
+    zip: String
+}
+
+type Query {
+    Address(id: ID!): Address!
+    Addresses(
+        companyId: String!
+        options: AddressesQueryOptions
+    ): [Address!]!
+}
+
+type Mutation {
+	createAddress(addressInput: AddressInput!): Address!
+	editAddress(id: UUID!, addressEdit: AddressEdit!): Address!
+	deleteAddress(id: UUID!): UUID!
+}
+
+input AddressesQueryOptions {
+    searchTerm: String
+}

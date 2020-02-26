@@ -5,8 +5,8 @@ import {
     EntitySchema,
     EntityManager,
     getRepository
-} from "typeorm";
-import { QueryDeepPartialEntity } from "typeorm/query-builder/QueryPartialEntity";
+} from "@gather/typeorm";
+import { QueryDeepPartialEntity } from "@gather/typeorm/query-builder/QueryPartialEntity";
 
 import { Base, WithoutId } from "../entity/BaseEntity";
 import { EntityNotFoundError } from "../errors";

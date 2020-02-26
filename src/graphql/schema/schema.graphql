@@ -1,0 +1,11 @@
+
+# import Query.*, Mutation.* from "address.graphql"
+
+# valid format: YYYY-MM-DD
+scalar Date
+# valid format: '00:00:00Z' or '00:00:00+00:00'
+scalar Time
+# TODO: Fix timezone handling
+# valid format: '2019-01-01T00:00:00Z'
+scalar DateTime
+scalar UUID

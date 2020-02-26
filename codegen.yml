@@ -1,0 +1,11 @@
+schema: "./src/graphql/schema/schema.graphql"
+overwrite: true
+generates:
+  ./src/graphql/types/graphql-types.ts:
+    plugins:
+      - add: "/* tslint:disable */\n"
+      - typescript
+      - typescript-resolvers
+    config:
+      useIndexSignature: true
+      maybeValue: "T | undefined"
